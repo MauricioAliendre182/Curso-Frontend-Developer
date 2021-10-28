@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color:salmon;
+        }
+        p::first-letter {
+            color: teal
+        }
+        p::before{
+            content: "- "
+        }
+        p::after{
+            content: "🙏"
+        }
+        p:hover::after{
+            content: "😆";
+        }
+        div p:nth-child(2){
+            color: violet
+        }
+        ::placeholder{
+            color: tomato;
+        }
+        button {
+            color: #1a73e8;
+        }
+        button:active {
+            color: #1557ad;
+        }
+        .verde-input:focus {
+            background: #91c93d;
+            color: white;
+            font-weight: bold;
+        }
+        .azul-input:focus {
+            background: #121f3d;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Platzi</p>
+        <p>Lo</p>
+        <p>Mejor</p>
+    </div>
+    <input type="text" placeholder="name">
+    <button>Presiona aqui</button><br>
+    <input class="verde-input" value="Voy a ser color Verde Platzi"><br>
+    <input class="azul-input" value="Voy a ser color Azul Platzi"> 
+</body>
+</html>
